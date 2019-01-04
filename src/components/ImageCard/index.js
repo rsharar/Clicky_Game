@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function ImageCard(props) {
+export default function ImageCard(props) {
     return (
-        <div>
-            <h4>This is where the images will go</h4>
-        </div>
+            <div className="img-container">
+                <img
+                    alt={props.characters.name}
+                    src={props.characters.image}
+                />
+            </div>
     )
 }
-
-
-export default ImageCard

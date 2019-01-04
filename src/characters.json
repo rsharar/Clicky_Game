@@ -7,12 +7,12 @@
     {
         "id": 2,
         "name": "Michael",
-        "image": "/img/michael.jpg"
+        "image": "/img/michael.png"
     },
     {
         "id": 3,
         "name": "Jim",
-        "image": "/img/jim.jpg"
+        "image": "/img/jim.jpeg"
     },
     {
         "id": 4,
@@ -27,7 +27,7 @@
     {
         "id": 6,
         "name": "Kevin",
-        "image": "/img/kevin.jpg"
+        "image": "/img/kevin.jpeg"
     },
     {
         "id": 7,
@@ -37,7 +37,7 @@
     {
         "id": 8,
         "name": "Oscar",
-        "image": "/img/oscar.jpg"
+        "image": "/img/oscar.jpeg"
     },
     {
         "id": 9,
@@ -47,56 +47,56 @@
     {
         "id": 10,
         "name": "Toby",
-        "image": "/img/toby.jpg"
+        "image": "/img/toby.jpeg"
     },
     {
         "id": 11,
         "name": "Stanley",
-        "image": "/img/stanley.jpg"
+        "image": "/img/stanley.jpeg"
     },
     {
         "id": 12,
         "name": "Ryan",
-        "image": "/img/ryan.jpg"
+        "image": "/img/ryan.jpeg"
     },
     {
         "id": 13,
         "name": "Creed",
-        "image": "/img/creed.jpg"
+        "image": "/img/creed.jpeg"
     },
     {
         "id": 14,
         "name": "Kelly",
-        "image": "/img/kelly.jpg"
+        "image": "/img/kelly.jpeg"
     },
     {
         "id": 15,
         "name": "Darryl",
-        "image": "/img/darryl.jpg"
+        "image": "/img/darryl.jpeg"
     },
     {
         "id": 16,
         "name": "Meredith",
-        "image": "/img/meredith.jpg"
+        "image": "/img/meredith.jpeg"
     },
     {
         "id": 17,
         "name": "Gabe",
-        "image": "/img/gabe.jpg"
+        "image": "/img/gabe.jpeg"
     },
     {
         "id": 18,
         "name": "Phyllis",
-        "image": "/img/phyllis.jpg"
+        "image": "/img/phyllis.jpeg"
     },
     {
         "id": 19,
         "name": "Jan",
-        "image": "/img/jan.jpg"
+        "image": "/img/jan.jpeg"
     },
     {
         "id": 20,
         "name": "Holly",
-        "image": "/img/holly.jpg"
+        "image": "/img/holly.jpeg"
     }
 ]
