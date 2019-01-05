@@ -27,7 +27,7 @@ class App extends Component {
     this.setState({
       currentScore: this.state.currentScore + 1
     })
-    console.log(this.state.currentScore)
+    console.log("currentScore: " + this.state.currentScore)
   }
 
 
@@ -43,7 +43,7 @@ class App extends Component {
         <div>
           {characters.map((character, i) => {
             return (
-              <ImageCard characters={character} key={character.id} />
+              <ImageCard characters={character} key={character.id} incrementScore={this.increaseScore}/>
             )
           })}
         </div>
