@@ -15,19 +15,32 @@ class App extends Component {
     gameOver: false
   }
 
-  // add all functions for gameplay
+  // FUNCTION SHUFFLE IMGS 
+  // if currentScore === 0, shuffle imgs
+  // else {
+  // on click shuffle imgs
 
-  // shuffle characters
-  // clicked img
-  // imgClicked = id => {
-    
-  // }
-  // increase score with correct click
-  increaseScore = () => {
+  // FUNCTION HANDLE CLICK
+
+  imgClicked = (id) => {
+    console.log(this.state.data[id])
+    if (this.state.data[id].clicked === 'true') {
+      console.log("Game Over")
+    }
+    else{
+      this.increaseScore()
+    }
+  }
+
+  // FUNCTION INCREASE SCORE
+  increaseScore = (id) => {
+    console.log(this.state.data[id])
     this.setState({
-      currentScore: this.state.currentScore + 1
+      currentScore: this.state.currentScore + 1,
+      clicked: true
     })
     console.log("currentScore: " + this.state.currentScore)
+    console.log("clicked: " + this.state.clicked)
   }
   //FUNCTION UPDATE CLICKED STATUS
   // when an image is clicked, check state
@@ -39,12 +52,12 @@ class App extends Component {
     return (
       <div>
         <div>
-          <Navbar score={this.state.currentScore}/>
+          <Navbar score={this.state.currentScore} />
         </div>
         <div>
           {characters.map((character, i) => {
             return (
-              <ImageCard characters={character} key={character.id} incrementScore={this.increaseScore}/>
+              <ImageCard characters={character} key={character.id} incrementScore={this.increaseScore} />
             )
           })}
         </div>

@@ -1,21 +1,23 @@
 import React from "react";
 import "./style.css";
 
-class ImageCard extends React.Component{
+class ImageCard extends React.Component {
+    state = {
+        clicked: false
+    }
+   
 
-    click = () => {
-        console.log('click');
-    };
 
-    render(){
-    return (
+    render() {
+        return (
+
             <div className="img-container">
                 <img onClick={this.props.incrementScore}
                     alt={this.props.characters.name}
                     src={this.props.characters.image}
                 />
             </div>
-    )
-}
+        )
+    }
 }
 export default ImageCard;
