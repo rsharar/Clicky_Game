@@ -1,103 +1,122 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "name": "Dwight",
-        "image": "/img/dwight.jpg"
+        "image": "/img/dwight.jpg",
+        "clicked": false
+    },
+    {
+        "id": 1,
+        "name": "Michael",
+        "image": "/img/michael.png",
+        "clicked": false
     },
     {
         "id": 2,
-        "name": "Michael",
-        "image": "/img/michael.png"
+        "name": "Jim",
+        "image": "/img/jim.jpg",
+        "clicked": false
     },
     {
         "id": 3,
-        "name": "Jim",
-        "image": "/img/jim.jpg"
+        "name": "Pam",
+        "image": "/img/pam.jpg",
+        "clicked": false
     },
     {
         "id": 4,
-        "name": "Pam",
-        "image": "/img/pam.jpg"
+        "name": "Andy",
+        "image": "/img/andy.jpeg",
+        "clicked": false
     },
     {
         "id": 5,
-        "name": "Andy",
-        "image": "/img/andy.jpeg"
+        "name": "Kevin",
+        "image": "/img/kevin.jpeg",
+        "clicked": false
     },
     {
         "id": 6,
-        "name": "Kevin",
-        "image": "/img/kevin.jpeg"
+        "name": "Angela",
+        "image": "/img/angela.jpg",
+        "clicked": false
     },
     {
         "id": 7,
-        "name": "Angela",
-        "image": "/img/angela.jpg"
+        "name": "Oscar",
+        "image": "/img/oscar.jpeg",
+        "clicked": false
     },
     {
         "id": 8,
-        "name": "Oscar",
-        "image": "/img/oscar.jpeg"
+        "name": "Erin",
+        "image": "/img/erin.jpg",
+        "clicked": false
     },
     {
         "id": 9,
-        "name": "Erin",
-        "image": "/img/erin.jpg"
+        "name": "Toby",
+        "image": "/img/toby.jpeg",
+        "clicked": false
     },
     {
         "id": 10,
-        "name": "Toby",
-        "image": "/img/toby.jpeg"
-    }
-    ,
+        "name": "Stanley",
+        "image": "/img/stanley.jpeg",
+        "clicked": false
+    },
     {
         "id": 11,
-        "name": "Stanley",
-        "image": "/img/stanley.jpeg"
+        "name": "Ryan",
+        "image": "/img/ryan.jpeg",
+        "clicked": false
     },
     {
         "id": 12,
-        "name": "Ryan",
-        "image": "/img/ryan.jpeg"
+        "name": "Creed",
+        "image": "/img/creed.jpeg",
+        "clicked": false
     },
     {
         "id": 13,
-        "name": "Creed",
-        "image": "/img/creed.jpeg"
+        "name": "Kelly",
+        "image": "/img/kelly.jpeg",
+        "clicked": false
     },
     {
         "id": 14,
-        "name": "Kelly",
-        "image": "/img/kelly.jpeg"
+        "name": "Darryl",
+        "image": "/img/darryl.jpeg",
+        "clicked": false
     },
     {
         "id": 15,
-        "name": "Darryl",
-        "image": "/img/darryl.jpeg"
+        "name": "Meredith",
+        "image": "/img/meredith.jpeg",
+        "clicked": false
     },
     {
         "id": 16,
-        "name": "Meredith",
-        "image": "/img/meredith.jpeg"
+        "name": "Gabe",
+        "image": "/img/gabe.jpeg",
+        "clicked": false
     },
     {
         "id": 17,
-        "name": "Gabe",
-        "image": "/img/gabe.jpeg"
+        "name": "Phyllis",
+        "image": "/img/phyllis.jpeg",
+        "clicked": false
     },
     {
         "id": 18,
-        "name": "Phyllis",
-        "image": "/img/phyllis.jpeg"
+        "name": "Jan",
+        "image": "/img/jan.jpeg",
+        "clicked": false
     },
     {
         "id": 19,
-        "name": "Jan",
-        "image": "/img/jan.jpeg"
-    },
-    {
-        "id": 20,
         "name": "Holly",
-        "image": "/img/holly.jpeg"
+        "image": "/img/holly.jpeg",
+        "clicked": false
     }
 ]
