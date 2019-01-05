@@ -29,16 +29,17 @@ class App extends Component {
     })
     console.log("currentScore: " + this.state.currentScore)
   }
-
-
-  // update state of click img
+  //FUNCTION UPDATE CLICKED STATUS
+  // when an image is clicked, check state
+  // if img state is clicked => gameOver
+  // else update the state of the ImageCard (by its id) to be 'clicked'
 
 
   render() {
     return (
       <div>
         <div>
-          <Navbar />
+          <Navbar score={this.state.currentScore}/>
         </div>
         <div>
           {characters.map((character, i) => {
