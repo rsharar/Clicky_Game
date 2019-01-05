@@ -1,13 +1,20 @@
 import React from "react";
 import "./style.css";
 
-export default function ImageCard(props) {
+class ImageCard extends React.Component{
+
+    click = () => {
+        console.log('click');
+    };
+    render(){
     return (
             <div className="img-container">
-                <img
-                    alt={props.characters.name}
-                    src={props.characters.image}
+                <img onClick={this.click}
+                    alt={this.props.characters.name}
+                    src={this.props.characters.image}
                 />
             </div>
     )
 }
+}
+export default ImageCard;
