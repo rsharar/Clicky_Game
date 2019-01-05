@@ -12,7 +12,7 @@
     {
         "id": 3,
         "name": "Jim",
-        "image": "/img/jim.jpeg"
+        "image": "/img/jim.jpg"
     },
     {
         "id": 4,
@@ -22,7 +22,7 @@
     {
         "id": 5,
         "name": "Andy",
-        "image": "/img/andy.jpg"
+        "image": "/img/andy.jpeg"
     },
     {
         "id": 6,
