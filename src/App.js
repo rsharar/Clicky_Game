@@ -22,9 +22,8 @@ class App extends Component {
 
   // FUNCTION HANDLE CLICK
 
-  imgClicked = (id) => {
-    console.log(this.state.data[id])
-    if (this.state.data[id].clicked === 'true') {
+  imgClicked = () => {
+    if (this.state.data.clicked === 'true') {
       console.log("Game Over")
     }
     else{
@@ -34,13 +33,14 @@ class App extends Component {
 
   // FUNCTION INCREASE SCORE
   increaseScore = (id) => {
-    console.log(this.state.data[id])
+
+    console.log(id)
     this.setState({
       currentScore: this.state.currentScore + 1,
       clicked: true
     })
-    console.log("currentScore: " + this.state.currentScore)
-    console.log("clicked: " + this.state.clicked)
+    console.log("id: " + id)
+    console.log("clickedState: " + this.state.clicked)
   }
   //FUNCTION UPDATE CLICKED STATUS
   // when an image is clicked, check state
