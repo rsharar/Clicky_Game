@@ -20,26 +20,58 @@ class App extends Component {
 
   // FUNCTION HANDLE CLICK
 
-  imgClicked = () => {
-    if (this.state.data.clicked === 'true') {
-      console.log("Game Over")
-    }
-    else{
-      this.increaseScore()
-    }
-  }
+  // imgClicked = () => {
+  //   if (this.state.data.clicked === 'true') {
+  //     console.log("Game Over")
+  //   }
+  //   else {
+  //     this.increaseScore()
+  //   }
+  // }
 
   // FUNCTION INCREASE SCORE
-  increaseScore = (id) => {
+  // increaseScore = (id) => {
 
-    console.log(id)
-    this.setState({
-      currentScore: this.state.currentScore + 1,
-      clicked: true
-    })
-    console.log("id: " + id)
-    console.log("clickedState: " + this.state.clicked)
+  //   console.log(id)
+  //   this.setState({
+  //     currentScore: this.state.currentScore + 1,
+  //     clicked: true
+  //   })
+  //   console.log("id: " + id)
+  //   console.log("clickedState: " + this.state.clicked)
+  // }
+  gameOver = () => {
+    if (this.state.currentScore > this.state.topScore) {
+      this.setState({ topScore: this.state.currentScore }, function () {
+        console.log(this.state.topScore);
+      });
+    }
+    characters.forEach(character => {
+      character.count = 0;
+    });
+    alert(`Game Over! \nYour Score: ${this.state.currentScore}`);
+    this.setState({ currentScore: 0 });
+    return true;
   }
+
+
+  clickCount = id => {
+    characters.find((o, i) => {
+      if (o.id === id) {
+        if (characters[i].count === 0) {
+          characters[i].count = characters[i].count + 1;
+          this.setState({ score: this.state.currentScore + 1 }, function () {
+            console.log(this.state.currentScore);
+          });
+          characters.sort(() => Math.random() - 0.5)
+          return true;
+        } else {
+          this.gameOver();
+        }
+      }
+    });
+  }
+
   //FUNCTION UPDATE CLICKED STATUS
   // when an image is clicked, check state
   // if img state is clicked => gameOver
@@ -49,19 +81,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Navbar score={this.state.currentScore} highScore = {this.state.topScore}/>
-        </div>
-        <div>
-          {characters.map((character, i) => {
-            return (
-              <ImageCard characters={character} key={character.id} incrementScore={this.increaseScore} />
-            )
-          })}
-        </div>
-        <div>
-          <Footer />
-        </div>
+        <Navbar score={this.state.currentScore} highScore={this.state.topScore} />
+
+        {characters.map(character => (
+          <ImageCard
+            characters={character}
+            key={character.id}
+            incrementScore={this.clickCount} />
+        ))}
+        <Footer />
       </div>
     );
   }
