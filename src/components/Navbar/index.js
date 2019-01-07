@@ -4,20 +4,20 @@ import "./style.css";
 
 const NavBar = (props) => {
     return (
-        <Navbar>
-            <Navbar.Header>
-                <Navbar.Brand>
-                    <a href="#home">The Office</a>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-            </Navbar.Header>
-            <Navbar.Collapse>
-                <Navbar.Text>
-                    Click the characters below and don't click the same one twice!
-            </Navbar.Text>
-                <Navbar.Text pullRight>Score: {props.score} | Top Score: {props.topScore}</Navbar.Text>
-            </Navbar.Collapse>
-        </Navbar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">The Office - Memory Game</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item justify-content-center">
+                    <div class="nav-item" href="#">Click the characters below and don't click the same one twice!</div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-item">Score: {props.score} | Top Score: {props.topScore}</a>
+                </li>
+            </ul>
+
+        </nav>
     )
 }
 export default NavBar;

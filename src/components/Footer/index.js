@@ -3,8 +3,8 @@ import "./style.css";
 
 function Footer(props) {
     return (
-        <div>
-            <h1>This is the Footer</h1>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://github.com/rsharar"> Rudy Sharar</a>
         </div>
     )
 }
