@@ -3,8 +3,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ImageCard from './components/ImageCard';
 import characters from "./characters.json";
-
-
 import './App.css';
 
 class App extends Component {
@@ -52,7 +50,7 @@ class App extends Component {
     return (
       <div>
         <div>
-          <Navbar score={this.state.currentScore} />
+          <Navbar score={this.state.currentScore} highScore = {this.state.topScore}/>
         </div>
         <div>
           {characters.map((character, i) => {
