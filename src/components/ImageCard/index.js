@@ -11,7 +11,7 @@ class ImageCard extends React.Component {
         return (
 
             <div className="img-container">
-                <img onClick={ () => this.props.incrementScore(this.props.characters.id)}
+                <img onClick={ () => this.props.clickCount(this.props.characters.id)}
                     alt={this.props.characters.name}
                     src={this.props.characters.image}
                 />

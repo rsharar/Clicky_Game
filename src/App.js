@@ -56,12 +56,14 @@ class App extends Component {
 
 
   clickCount = id => {
-    characters.find((o, i) => {
-      if (o.id === id) {
-        if (characters[i].count === 0) {
-          characters[i].count = characters[i].count + 1;
-          this.setState({ score: this.state.currentScore + 1 }, function () {
-            console.log(this.state.currentScore);
+    characters.find((j, i) => {
+      if (j.id === id) {
+        if (!characters[i].clicked) {
+          console.log(characters[i].clicked);
+          characters[i].clicked = true;
+          this.setState({ 
+            currentScore: this.state.currentScore + 1 }, function () {
+            console.log("Current Score: " + this.state.currentScore);
           });
           characters.sort(() => Math.random() - 0.5)
           return true;
@@ -87,7 +89,7 @@ class App extends Component {
           <ImageCard
             characters={character}
             key={character.id}
-            incrementScore={this.clickCount} />
+            clickCount={this.clickCount} />
         ))}
         <Footer />
       </div>
