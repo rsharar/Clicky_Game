@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ImageCard from './components/ImageCard';
 import characters from "./characters.json";
+import GameOverModal from './components/GameOverModal';
 import './App.css';
 
 class App extends Component {
@@ -74,23 +75,23 @@ class App extends Component {
     });
   }
 
-  //FUNCTION UPDATE CLICKED STATUS
-  // when an image is clicked, check state
-  // if img state is clicked => gameOver
-  // else update the state of the ImageCard (by its id) to be 'clicked'
+  newGame = () => {
+    
+  }
 
 
   render() {
     return (
       <div>
         <Navbar score={this.state.currentScore} highScore={this.state.topScore} />
-
+        <GameOverModal newGame = {this.newGame}/>
         {characters.map(character => (
           <ImageCard
             characters={character}
             key={character.id}
             clickCount={this.clickCount} />
         ))}
+        
         <Footer />
       </div>
     );
